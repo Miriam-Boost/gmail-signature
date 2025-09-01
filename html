@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact + DNV ISO Block</title>
+<style>
+:root {
+--container-w: 760px; /* overall page max width */
+--left-col-w: 140px; /* photo column width */
+--gap: 16px; /* gap between columns */
+--vspace: 20px; /* vertical spacing between blocks */
+}
+
+
+body {
+margin: 0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+color: #111;
+line-height: 1.45;
+}
+
+
+.page {
+max-width: var(--container-w);
+margin: 32px auto;
+padding: 0 16px;
+}
+
+
+.row {
+display: grid;
+grid-template-columns: var(--left-col-w) 1fr;
+gap: var(--gap);
+align-items: start;
+}
+
+
+/* Left column for photo — no borders or backgrounds */
+.photo-slot {
+width: var(--left-col-w);
+min-height: 120px; /* gives you a visible drop area height to place a photo */
+}
+
+
+.photo-slot img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+
+/* Right column content stacked in a single column */
+.content p {
+margin: 0 0 4px 0;
+}
+
+
+/* Space below first block for a 600px-wide image */
+.image-space {
+margin-top: var(--vspace);
+}
+
+
+.image-space img {
+display: block;
+width: 600px;
+max-width: 100%;
+height: auto;
+}
+
+
+.block { margin-bottom: 28px; }
+</style>
+</head>
+<body>
+<main class="page">
+<!-- Block 1: Contact information -->
+<section class="block">
+<div class="row">
+<div class="photo-slot">
+<!-- Place photo here. Example placeholder image below; replace the src or remove the <img>. -->
+<!-- <img src="your-photo.jpg" alt="Photo" /> -->
+</div>
+<div class="content" aria-label="Contact information (single column)">
+<p><strong>Given Name Surname</strong></p>
+<p>Job Title</p>
+<p><a href="mailto:Email.Address@boost.ai">Email.Address@boost.ai</a></p>
+<p>+47 XXX XX XXX (optional)</p>
+</div>
+</div>
+
+
+<!-- Space for a 600px wide image below the contact info -->
+<div class="image-space" aria-label="600px image area">
+<!-- Placeholder image (600×200). Replace the src with your 600px-wide image URL. -->
+<img
+alt="600px image placeholder"
+src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nMjAwJz48cmVjdCB3aWR0aD0nNjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0nbm9uZScvPjwvc3ZnPg=="
+/>
+</div>
+</section>
+
+
+<!-- Block 2: DNV ISO statement -->
+<section class="block">
+<div class="row">
+<div class="photo-slot">
+<!-- Place photo here if needed for this block as well. -->
+</div>
+<div class="content" aria-label="DNV ISO statement (single column)">
+<p>Company with information security system certified by DNV ISO/IEC 27001 with extension of ISO/IEC 27701</p>
