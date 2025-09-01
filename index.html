@@ -39,13 +39,16 @@ align-items: start;
 /* Left column for photo — no borders or backgrounds */
 .photo-slot {
 width: var(--left-col-w);
-min-height: 120px; /* gives you a visible drop area height to place a photo */
+min-height: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
 .photo-slot img {
 display: block;
-width: 100%;
+max-width: 100%;
 height: auto;
 }
 
@@ -79,8 +82,7 @@ height: auto;
 <section class="block">
 <div class="row">
 <div class="photo-slot">
-<!-- Place photo here. Example placeholder image below; replace the src or remove the <img>. -->
-<!-- <img src="your-photo.jpg" alt="Photo" /> -->
+<img src="https://boost.ai/site/assets/files/4162/logo_lockup_full_color_600w.png?nc=1756726009" alt="Photo" />
 </div>
 <div class="content" aria-label="Contact information (single column)">
 <p><strong>Given Name Surname</strong></p>
@@ -93,10 +95,9 @@ height: auto;
 
 <!-- Space for a 600px wide image below the contact info -->
 <div class="image-space" aria-label="600px image area">
-<!-- Placeholder image (600×200). Replace the src with your 600px-wide image URL. -->
 <img
 alt="600px image placeholder"
-src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2MDAnIGhlaWdodD0nMjAwJz48cmVjdCB3aWR0aD0nNjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0nbm9uZScvPjwvc3ZnPg=="
+src="https://boost.ai/site/assets/files/4162/gartner_quadrant_email_banner.png?nc=1756723870"
 />
 </div>
 </section>
@@ -106,7 +107,24 @@ src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zd
 <section class="block">
 <div class="row">
 <div class="photo-slot">
-<!-- Place photo here if needed for this block as well. -->
+<img
+alt="iso/iec certification"
+src="https://boost.ai/site/assets/files/4162/iso_27001_iso_27701_-_round_logo_with_color_-_image.png?nc=1756723870"
+/>
 </div>
 <div class="content" aria-label="DNV ISO statement (single column)">
 <p>Company with information security system certified by DNV ISO/IEC 27001 with extension of ISO/IEC 27701</p>
+</div>
+</div>
+</section>
+
+
+<!-- Optional footer disclaimer -->
+<section class="block">
+<div class="content" aria-label="Email disclaimer (single column)">
+<p>This email could contain privileged and confidential information. Don’t share it with any third parties without the written consent of the sender. If you received this email by mistake, please notify the sender and delete it immediately. Please consider the environment before printing this email.</p>
+</div>
+</section>
+</main>
+</body>
+</html>
